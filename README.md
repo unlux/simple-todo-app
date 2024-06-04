@@ -1,8 +1,16 @@
-simple todo app that sends:
 
--Title
--Description
+# Simple Todo List Backend
 
-to your mongodb cluster
+This is a simple backend for a todo list application. It uses:
 
-gg ez
+* Zod for validation
+* Express.js as the backend framework
+* Mongoose for connecting to a MongoDB database
+
+## Getting Started
+
+1. Clone the repository
+2. Install the dependencies in both the frontend and backend directories:
+
+```bash
+npm install
