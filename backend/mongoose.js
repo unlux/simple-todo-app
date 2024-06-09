@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
-
+const dotenv = require("dotenv");
+dotenv.config();
 // .env
-mongoose.connect("mongodb+srv://admin:<password>@cluster.loluthought.mongodb.net/TODO-app");
+
+mongoose.connect(process.env.MONGODB_URI);
 const todoSchema = mongoose.Schema({
   title: String,
   description: String,
@@ -13,3 +15,5 @@ const todo = mongoose.model("todos", todoSchema);
 module.exports = {
   todo
 };
+
+
